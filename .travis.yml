@@ -10,3 +10,4 @@ script:
  - lettuce
  - cd ../pruebas_unitarias
  - python TestEdades.py
+ - coverage html
