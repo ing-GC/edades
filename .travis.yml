@@ -1,0 +1,12 @@
+language: python
+python:
+ - 2.7
+install:
+ - pip install -r requerimientos.txt
+before_script: 
+ - autopep8 -ir *
+script: 
+ - cd lettuce
+ - lettuce
+ - cd ../pruebas_unitarias
+ - python TestEdades.py
